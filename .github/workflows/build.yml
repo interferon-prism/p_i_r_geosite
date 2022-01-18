@@ -45,5 +45,4 @@ jobs:
 
       - name: Purge jsdelivr CDN
         run: |
-          cd publish || exit 1
           curl -i "https://purge.jsdelivr.net/gh/${{ github.repository }}@release/dlc.dat"
